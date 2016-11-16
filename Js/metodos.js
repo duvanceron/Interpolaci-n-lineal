@@ -263,7 +263,7 @@ $(document).ready(function () {
       });
     });
 
-
+  // aqui resultados
 
     $("#sum_xi").text(sum_xi);
     $("#sum_yi").text(sum_yi);
