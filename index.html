@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Interpolación lineal</title>
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <script type="" src="jquery.min.js"></script>
+    <script src="https://code.highcharts.com/highcharts.js"></script>
+    <script src="https://code.highcharts.com/modules/exporting.js"></script>
+    <script src="//rawgithub.com/phpepe/highcharts-regression/master/highcharts-regression.js?8"></script>
+    <script src="https://cdn.jsdelivr.net/lodash/4.17.2/lodash.min.js"></script>
+</head>
+
+<body>
+    <!--Desarrollado por:
+              Duvan Ceron Muñoz
+              Diego Fernando Jojoa.
+   Librerias usadas:highcharts
+                    Google Fonts
+   Framework:Jquery 
+   Lenguajes:Java Script
+   Estilos:Css
+   Comentario:Debe tener conexion a red, ya que algunas funcionan solo si hay 
+   conexion a internet.-->
+
+    <div id="general">
+        <div id="opcions">
+            <!-- Division de agregar  y eliminar -->
+            <div id="add">Agregar </div>
+            <div id="remove">Eliminar</div>
+        </div>
+        <div id="lista">
+            <div class="fila">
+                <div class="column1">Xi</div>
+                <div class="column2">Yi</div>
+            </div>
+        </div>
+        <div id="contenedor_2">
+            <h2>Resultados.</h2>
+            <div id="results">
+                <p><strong>ΣXi = </strong><span id="sum_xi"></span></p>
+                <p><strong>ΣYi = </strong><span id="sum_yi"></span></p>
+                <p><strong>ΣXi*Yi=  </strong><span id="acc_xi_yi"></span></p>
+                <p><strong>Σxi²=  </strong><span id="elevado"></span></p>
+                <p><strong>n = </strong><span id="times"></span></p>
+                <p><strong>a = </strong><span id="ei"></span></p>
+                <p><strong>b = </strong><span id="bi"></span></p>
+                <p><strong>ΣŶ= </strong><span id="y_gorritos"></span></p>
+                <p><strong>ΣY-Ŷ = </strong><span id="y_menos"></span></p>
+            </div>
+        </div>
+        <div id="New_value">
+            <h2> Agregar Valores.</h2>
+            <p>Xi</p>
+            <p>
+                <input type="number" name="" placeholder="Escribe valor Xi..." id="valor1" maxlength="4">
+            </p>
+            <p>Yi</p>
+            <p>
+                <input type="number" name="" placeholder="Escribe valor Yi..." id="valor2" maxlength="4">
+            </p>
+            <p>
+                <div id="btn_add">Agregar</div>
+            </p>
+            <p>
+                <div id="cancel">Cancelar</div>
+            </p>
+        </div>
+        <div id="other_results">
+            <p>
+                <button id="calculate" style='width:90px; height:30px'>Resultados</button>
+            </p>
+            <p>
+                Ingrese el valor de X que desee estimar segun la ecuacion.
+                <label>Xi=</label><input type="number" name="" placeholder="estimar el valor para" id="estimar_x">
+                <label>Yi=</label><input type="number" name="" placeholder="valor estimado en y" id="estimar_y" disabled>
+                <button id="calculate_x"> click me</button>
+                <p>
+                    <label>r=   </label><input type="number" name="" placeholder="valor de r" id="r" disabled>
+                </p>
+                <p>
+                    <label>r²=   </label><input type="number" name="" placeholder="valor de r²" id="r_2" disabled>
+                </p>
+        </div>
+        <div id="container"></div>
+    </div>
+    <script src="Js/metodos.js"></script>
+</body>
+
+</html>

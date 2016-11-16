@@ -1,0 +1,164 @@
+*{
+	margin:0;
+	padding: 0;
+}
+
+h2{
+	margin: 10px 19px 24px;
+}
+
+
+body{
+	font-family: 'Roboto', sans-serif;
+	margin:8px; 
+}
+strong{
+	margin-left: 20px ;
+}
+#general{
+	margin: 42px 20px 20px 55px;
+}
+#opcions {
+	width: 100%;
+	height: 30px;
+	margin-bottom: 46px;
+}
+#opcions div {
+	text-transform: uppercase;/*letra mayuscula*/
+	font-size: 13px;
+	font-weight: bold;
+	cursor: pointer;
+	width: 150px;
+	text-align: center;
+	display: inline-block;
+	line-height: 50px;/*altura agregar,remover y me centra el text*/
+	margin-bottom: 20px;
+	
+}
+
+#opcions #add{
+	background: #45a249;
+	color: #fff;
+	-webkit-transition:all 0.3s;
+	-o-transition:all 0.3s;
+	transition:all 0.3s;
+	border-radius: 7px;
+}
+#opcions #add:hover{
+	transition: 400ms all;
+	background: red; 
+}
+#opcions #remove{
+	background: #ea483c;
+	color: #fff;
+	-webkit-transition:all 0.3s;
+	-o-transition:all 0.3s;
+	transition:all 0.3s;
+	border-radius: 7px;
+}
+#opcions #remove:hover{
+	transition: 400ms all;
+	background: red; 
+}
+
+.fila, .fila_later {
+	background: #444;
+	color: #fff;
+	width: 380px;
+	margin-top: 3px;
+	transition: 400ms all;
+	border-radius:7px;
+}
+.fila div, .fila_later div {
+
+	text-align: center;
+	padding: 20px 0px;	
+	width: 185px;
+	display: inline-block;
+	border-radius: 7px;
+    
+}
+.fila:hover {
+	background: rgba(1,1,1,0.6);
+	transition: 400ms all;
+}
+
+#results{
+	margin: 26px 6px;
+	background:#444 ;
+	line-height: 30px;
+	color: #fff;
+	width: 200px;
+	border-radius: 7px;
+}
+
+#cancel{
+	cursor: pointer;
+	font-size: 18px;
+	transition: 400ms all;
+	position: relative;/*permite que un elemento se desplace respecto a lo que hubiera sido su posición normal*/
+	top: 8px;
+}
+#cancel:hover {
+	transition: 400ms all; 
+	color:red;
+}
+#New_value{
+	display: none;
+	position: fixed;/*permite fijar un elemento en una posición respecto al origen de coordenadas del primer elemento contenedor posicionado*/
+	color: #fff;
+	background: #333;
+	padding: 20px 40px;
+	top: 50%;
+	left: 50%;
+	transform: translate(68%, -54%);
+	border: 2px solid #999;
+}
+#New_value #btn_add {
+	cursor: pointer;
+	background: #fff;
+	width: 200px;
+	text-align: center;
+	font-size: 14px;
+	padding: 12px 0px;
+	color: #fff;
+	background: #4caf50;
+	transition: 400ms all;
+}
+#New_value #btn_add:hover{
+	transition: 400ms all;
+	background: #458e47;
+}
+
+
+#New_value input {
+		width: 200px;
+		padding: 4px 3px;
+		box-sizing: border-box;
+		margin: 29px 29px 22px 4px;
+	}
+#container{
+	width: 600px;
+	margin: 30px 30px;
+}
+#calculate{
+background: #444;
+color:white ;
+border-radius: 7px;
+
+
+}
+#calculate_x{
+background: #444;
+color:white;
+border-radius: 19px;
+text-shadow: 0 1px 1px rgba(0,0,0,.3);
+}
+#other_results{
+	margin: 26px 6px;
+	
+	line-height: 30px;
+	color: black;
+	width: 600px;
+	border-radius: 7px;
+}
